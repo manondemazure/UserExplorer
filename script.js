@@ -14,7 +14,8 @@ function createPopup(user) {
 	popup.innerHTML = `
 		<img class="img" src="${user.avatar}" alt="avatar">
 		<p class="name">${user.first_name} ${user.last_name}</p>
-		<a href="mailto:${user.email}" id="mailUser">${user.email}</a>`
+		<a href="mailto:${user.email}" id="mailUser">${user.email}</a>
+		<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>`
 
 	const buttonClose = document.createElement("button");
 	buttonClose.textContent = "Fermer";
